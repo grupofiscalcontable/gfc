@@ -73,6 +73,33 @@ Si el dominio cambia, reemplázalo en:
 Los datos de contacto (dirección, correo `contador.pachuca@gmail.com`) también viven en
 `index.html` y en el JSON-LD; actualízalos en ambos lugares si cambian.
 
+## Configurar el formulario de contacto (Web3Forms)
+
+El formulario envía los datos a **Web3Forms** (gratis, ilimitado) y te llegan por correo.
+Falta un paso: pegar tu *Access Key*.
+
+1. Entra a **https://web3forms.com**, escribe `contador.pachuca@gmail.com` en
+   *"Create Access Key"* y revisa tu bandeja: recibirás una clave con formato
+   `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`.
+2. En `index.html`, busca `REEMPLAZAR-CON-TU-ACCESS-KEY` (dentro del `<form id="contactForm">`)
+   y sustitúyelo por esa clave:
+   ```html
+   <input type="hidden" name="access_key" value="tu-clave-aqui">
+   ```
+3. Sube el cambio (`git push`). Envía una prueba desde el sitio y confirma que llega
+   el correo. Los envíos también quedan en el panel de web3forms.com.
+
+Detalles:
+
+- Al enviar, el visitante ve un mensaje de "gracias" sin salir de la página (vía JavaScript).
+  Sin JavaScript, Web3Forms muestra su propia página de confirmación.
+- El correo destino **no aparece en el HTML** (solo la Access Key), así que hay menos spam.
+- Ya incluye honeypot anti-bots (`botcheck`). Para añadir reCAPTCHA/hCaptcha, sigue la
+  documentación de Web3Forms.
+- Para cambiar el correo que recibe los avisos: se hace desde el panel de Web3Forms, o
+  añade `<input type="hidden" name="to" value="otro@correo.com">` (requiere plan con
+  varios destinatarios).
+
 ## Créditos de imágenes
 
 Fotografías de stock con licencia libre (uso comercial sin atribución obligatoria):

@@ -44,23 +44,53 @@
     });
   });
 
-  /* Formulario: componer correo con mailto (sitio estático) */
+  /* Formulario de contacto: envío AJAX a Web3Forms sin salir de la página.
+     Si JavaScript está desactivado, el navegador hace el POST normal y
+     Web3Forms muestra su propia página de confirmación. */
   var form = document.getElementById("contactForm");
+  var status = document.getElementById("formStatus");
   if (form) {
+    var defaultNote = status ? status.innerHTML : "";
     form.addEventListener("submit", function (e) {
       e.preventDefault();
-      var data = new FormData(form);
-      var cuerpo =
-        "Nombre: " + (data.get("Nombre") || "") + "\n" +
-        "Empresa: " + (data.get("Empresa") || "") + "\n" +
-        "Correo: " + (data.get("Correo") || "") + "\n" +
-        "Teléfono: " + (data.get("Telefono") || "") + "\n\n" +
-        (data.get("Mensaje") || "");
-      var href =
-        "mailto:contador.pachuca@gmail.com" +
-        "?subject=" + encodeURIComponent("Solicitud de diagnóstico — " + (data.get("Empresa") || "sitio web")) +
-        "&body=" + encodeURIComponent(cuerpo);
-      window.location.href = href;
+      var btn = form.querySelector('button[type="submit"]');
+      if (status) { status.textContent = "Enviando su solicitud…"; status.style.color = ""; }
+      if (btn) { btn.disabled = true; }
+
+      fetch(form.action, {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: new FormData(form)
+      })
+        .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
+        .then(function (res) {
+          if (res.ok && res.j.success) {
+            form.reset();
+            if (status) {
+              status.textContent = "¡Gracias! Recibimos su solicitud y un contador del despacho le contactará pronto.";
+              status.style.color = "#2c7a3f";
+            }
+          } else {
+            throw new Error((res.j && res.j.message) || "error");
+          }
+        })
+        .catch(function () {
+          if (status) {
+            status.innerHTML =
+              "No se pudo enviar el formulario. Escríbanos directamente a " +
+              '<b><a href="mailto:contador.pachuca@gmail.com">contador.pachuca@gmail.com</a></b>.';
+            status.style.color = "#b3261e";
+          }
+        })
+        .finally(function () {
+          if (btn) { btn.disabled = false; }
+          if (status) {
+            setTimeout(function () {
+              status.innerHTML = defaultNote;
+              status.style.color = "";
+            }, 12000);
+          }
+        });
     });
   }
 

@@ -551,11 +551,16 @@
           </li>
         </ul>
 
-        <form class="card-form" id="contactForm" action="mailto:contador.pachuca@gmail.com" method="post" enctype="text/plain">
+        <form class="card-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+          <!-- Web3Forms: pega tu Access Key (la obtienes gratis en https://web3forms.com con tu correo) -->
+          <input type="hidden" name="access_key" value="4de08a6a-a9f0-49b4-af2b-335ab9cabf6f">
+          <input type="hidden" name="subject" value="Nueva solicitud de diagnóstico — grupofiscalcontable.github.io">
+          <input type="hidden" name="from_name" value="Sitio web Grupo Fiscal Contable">
+          <input type="checkbox" name="botcheck" class="visually-hidden" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
           <div class="form-row">
             <div class="field">
               <label for="nombre">Nombre</label>
-              <input type="text" id="nombre" name="Nombre" autocomplete="name" required>
+              <input type="text" id="nombre" name="name" autocomplete="name" required>
             </div>
             <div class="field">
               <label for="empresa">Empresa</label>
@@ -565,7 +570,7 @@
           <div class="form-row">
             <div class="field">
               <label for="email">Correo electrónico</label>
-              <input type="email" id="email" name="Correo" autocomplete="email" required>
+              <input type="email" id="email" name="email" autocomplete="email" required>
             </div>
             <div class="field">
               <label for="telefono">Teléfono</label>
@@ -577,7 +582,7 @@
             <textarea id="mensaje" name="Mensaje" placeholder="Sector, número de empleados, obligaciones que le preocupan (SAT, IMSS, REPSE, comercio exterior)…" required></textarea>
           </div>
           <button class="btn btn--primary" type="submit">Enviar solicitud <svg class="ico" aria-hidden="true"><use href="#i-arrow"></use></svg></button>
-          <p class="form-note">Al enviar se abrirá su aplicación de correo con el mensaje listo para <b>contador.pachuca@gmail.com</b>. Sus datos se usan únicamente para atender su solicitud.</p>
+          <p class="form-note" id="formStatus" role="status" aria-live="polite">Sus datos se envían de forma segura y se usan únicamente para atender su solicitud. También puede escribirnos a <b>contador.pachuca@gmail.com</b>.</p>
         </form>
       </div>
     </div>
