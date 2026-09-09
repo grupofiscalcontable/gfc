@@ -60,10 +60,13 @@ Es un sitio estático: sirve la carpeta tal cual.
 
 ### Dominio de producción
 
-`https://grupofiscalcontable.github.io/gfc/` (repositorio `grupofiscalcontable/gfc`,
-GitHub Pages sirviendo `/` — sube el contenido de `landing/` a la raíz del repo).
+**`https://grupofiscalcontable.com/`** — dominio propio, servido por GitHub Pages
+(repositorio `grupofiscalcontable/gfc`, rama `main`, raíz `/`) detrás de Cloudflare.
+El archivo `CNAME` de este repo fija el dominio; los DNS apuntan a GitHub Pages vía
+Cloudflare. La URL antigua `grupofiscalcontable.github.io/gfc/` redirige (301) al
+dominio propio.
 
-Si el dominio cambia, reemplázalo en:
+Si el dominio cambia, reemplázalo en (y actualiza el archivo `CNAME`):
 
 1. `index.html` → `<link rel="canonical">`, etiquetas `og:*` / `twitter:*`, los `@id`
    / URLs y el `sameAs` del bloque JSON-LD.
