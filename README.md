@@ -73,32 +73,26 @@ Si el dominio cambia, reemplázalo en:
 Los datos de contacto (dirección, correo `contador.pachuca@gmail.com`) también viven en
 `index.html` y en el JSON-LD; actualízalos en ambos lugares si cambian.
 
-## Configurar el formulario de contacto (Web3Forms)
+## Formulario de contacto (Formspree)
 
-El formulario envía los datos a **Web3Forms** (gratis, ilimitado) y te llegan por correo.
-Falta un paso: pegar tu *Access Key*.
+El formulario (`<form id="contactForm">` en `index.html`) envía los datos a **Formspree**:
 
-1. Entra a **https://web3forms.com**, escribe `contador.pachuca@gmail.com` en
-   *"Create Access Key"* y revisa tu bandeja: recibirás una clave con formato
-   `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`.
-2. En `index.html`, busca `REEMPLAZAR-CON-TU-ACCESS-KEY` (dentro del `<form id="contactForm">`)
-   y sustitúyelo por esa clave:
-   ```html
-   <input type="hidden" name="access_key" value="tu-clave-aqui">
-   ```
-3. Sube el cambio (`git push`). Envía una prueba desde el sitio y confirma que llega
-   el correo. Los envíos también quedan en el panel de web3forms.com.
+```
+action="https://formspree.io/f/mbgjqkgo"
+```
 
-Detalles:
-
-- Al enviar, el visitante ve un mensaje de "gracias" sin salir de la página (vía JavaScript).
-  Sin JavaScript, Web3Forms muestra su propia página de confirmación.
-- El correo destino **no aparece en el HTML** (solo la Access Key), así que hay menos spam.
-- Ya incluye honeypot anti-bots (`botcheck`). Para añadir reCAPTCHA/hCaptcha, sigue la
-  documentación de Web3Forms.
-- Para cambiar el correo que recibe los avisos: se hace desde el panel de Web3Forms, o
-  añade `<input type="hidden" name="to" value="otro@correo.com">` (requiere plan con
-  varios destinatarios).
+- El destinatario y los ajustes (asunto, autorespuesta, reCAPTCHA, dominios permitidos)
+  se configuran en el panel de **formspree.io** → proyecto `mbgjqkgo`.
+- Al enviar, el visitante ve *"¡Gracias!…"* sin salir de la página (JavaScript en
+  `js/main.js`). Sin JavaScript, Formspree muestra su propia página de confirmación.
+- Campos que se envían: `nombre`, `empresa`, `email`, `telefono`, `mensaje`, más
+  `_subject` (asunto del correo). Incluye honeypot `_gotcha` anti-spam.
+- Plan gratis de Formspree: 50 envíos/mes. Los envíos quedan archivados en el panel.
+- **Primer envío:** Formspree manda un correo de confirmación para activar el buzón;
+  hay que hacer clic una vez.
+- Para cambiar de proveedor o de ID, edita `action=` en el `<form>`. Si cambias de
+  proveedor, revisa el manejo de la respuesta en `js/main.js` (Formspree responde
+  `{ "ok": true }` en éxito y `{ "errors": [...] }` en error).
 
 ## Créditos de imágenes
 

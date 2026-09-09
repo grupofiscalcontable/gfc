@@ -551,20 +551,18 @@
           </li>
         </ul>
 
-        <form class="card-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-          <!-- Web3Forms: pega tu Access Key (la obtienes gratis en https://web3forms.com con tu correo) -->
-          <input type="hidden" name="access_key" value="4de08a6a-a9f0-49b4-af2b-335ab9cabf6f">
-          <input type="hidden" name="subject" value="Nueva solicitud de diagnóstico — grupofiscalcontable.github.io">
-          <input type="hidden" name="from_name" value="Sitio web Grupo Fiscal Contable">
-          <input type="checkbox" name="botcheck" class="visually-hidden" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <form class="card-form" id="contactForm" action="https://formspree.io/f/mbgjqkgo" method="POST">
+          <input type="hidden" name="_subject" value="Nueva solicitud de diagnóstico — grupofiscalcontable.github.io">
+          <!-- honeypot anti-spam de Formspree: si un bot lo rellena, se descarta -->
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" class="visually-hidden" style="display:none">
           <div class="form-row">
             <div class="field">
               <label for="nombre">Nombre</label>
-              <input type="text" id="nombre" name="name" autocomplete="name" required>
+              <input type="text" id="nombre" name="nombre" autocomplete="name" required>
             </div>
             <div class="field">
               <label for="empresa">Empresa</label>
-              <input type="text" id="empresa" name="Empresa" autocomplete="organization" required>
+              <input type="text" id="empresa" name="empresa" autocomplete="organization" required>
             </div>
           </div>
           <div class="form-row">
@@ -574,12 +572,12 @@
             </div>
             <div class="field">
               <label for="telefono">Teléfono</label>
-              <input type="tel" id="telefono" name="Telefono" autocomplete="tel">
+              <input type="tel" id="telefono" name="telefono" autocomplete="tel" required>
             </div>
           </div>
           <div class="field">
             <label for="mensaje">¿En qué podemos ayudarle?</label>
-            <textarea id="mensaje" name="Mensaje" placeholder="Sector, número de empleados, obligaciones que le preocupan (SAT, IMSS, REPSE, comercio exterior)…" required></textarea>
+            <textarea id="mensaje" name="mensaje" placeholder="Sector, número de empleados, obligaciones que le preocupan (SAT, IMSS, REPSE, comercio exterior)…" required></textarea>
           </div>
           <button class="btn btn--primary" type="submit">Enviar solicitud <svg class="ico" aria-hidden="true"><use href="#i-arrow"></use></svg></button>
           <p class="form-note" id="formStatus" role="status" aria-live="polite">Sus datos se envían de forma segura y se usan únicamente para atender su solicitud. También puede escribirnos a <b>contador.pachuca@gmail.com</b>.</p>

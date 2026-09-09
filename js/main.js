@@ -44,9 +44,9 @@
     });
   });
 
-  /* Formulario de contacto: envío AJAX a Web3Forms sin salir de la página.
-     Si JavaScript está desactivado, el navegador hace el POST normal y
-     Web3Forms muestra su propia página de confirmación. */
+  /* Formulario de contacto: envío AJAX a Formspree sin salir de la página.
+     Sin JavaScript, el navegador hace el POST normal y Formspree muestra
+     su propia página de confirmación. */
   var form = document.getElementById("contactForm");
   var status = document.getElementById("formStatus");
   if (form) {
@@ -62,16 +62,21 @@
         headers: { Accept: "application/json" },
         body: new FormData(form)
       })
-        .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
+        .then(function (r) {
+          return r.json().then(function (j) { return { ok: r.ok, j: j }; }, function () { return { ok: r.ok, j: {} }; });
+        })
         .then(function (res) {
-          if (res.ok && res.j.success) {
+          if (res.ok) {
             form.reset();
             if (status) {
               status.textContent = "¡Gracias! Recibimos su solicitud y un contador del despacho le contactará pronto.";
               status.style.color = "#2c7a3f";
             }
           } else {
-            throw new Error((res.j && res.j.message) || "error");
+            var msg = res.j && res.j.errors && res.j.errors.length
+              ? res.j.errors.map(function (x) { return x.message; }).join(" ")
+              : "error";
+            throw new Error(msg);
           }
         })
         .catch(function () {
