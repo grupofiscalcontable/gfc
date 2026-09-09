@@ -83,7 +83,7 @@
           if (status) {
             status.innerHTML =
               "No se pudo enviar el formulario. Escríbanos directamente a " +
-              '<b><a href="mailto:contador.pachuca@gmail.com">contador.pachuca@gmail.com</a></b>.';
+              '<b><a href="mailto:contacto@grupofiscalcontable.com">contacto@grupofiscalcontable.com</a></b>.';
             status.style.color = "#b3261e";
           }
         })

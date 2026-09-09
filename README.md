@@ -10,7 +10,7 @@ archivo JS pequeño.
 landing/
 ├── index.html            Página completa (todas las secciones)
 ├── css/styles.css         Estilos (tokens, responsive, dark navy + oro)
-├── js/main.js             Menú móvil, acordeón FAQ, formulario mailto, animaciones
+├── js/main.js             Menú móvil, acordeón FAQ, envío AJAX del formulario, animaciones
 ├── site.webmanifest       PWA / icono en pantalla de inicio
 ├── robots.txt             Indexación abierta + referencia al sitemap
 ├── sitemap.xml            1 URL
@@ -73,7 +73,7 @@ Si el dominio cambia, reemplázalo en (y actualiza el archivo `CNAME`):
 2. `robots.txt` → línea `Sitemap:`.
 3. `sitemap.xml` → `<loc>`.
 
-Los datos de contacto (dirección, correo `contador.pachuca@gmail.com`) también viven en
+Los datos de contacto (dirección, correo `contacto@grupofiscalcontable.com`) también viven en
 `index.html` y en el JSON-LD; actualízalos en ambos lugares si cambian.
 
 ## Formulario de contacto (Formspree)
