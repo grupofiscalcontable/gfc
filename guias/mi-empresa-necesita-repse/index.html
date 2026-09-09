@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>¿Mi empresa necesita registro REPSE? Guía para saberlo</title>
+<meta name="description" content="Cómo saber si tu empresa está obligada a registrarse en el REPSE o a exigirlo a un proveedor: el criterio de los tres filtros, con la ley vigente a septiembre de 2026.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0b2942">
+<link rel="canonical" href="https://grupofiscalcontable.com/guias/mi-empresa-necesita-repse/">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Grupo Fiscal Contable">
+<meta property="og:locale" content="es_MX">
+<meta property="og:title" content="¿Mi empresa necesita registro REPSE? Guía para saberlo">
+<meta property="og:description" content="El criterio de los tres filtros de Grupo Fiscal Contable para decidir si necesitas REPSE, con la ley vigente a septiembre de 2026.">
+<meta property="og:url" content="https://grupofiscalcontable.com/guias/mi-empresa-necesita-repse/">
+<meta property="og:image" content="https://grupofiscalcontable.com/assets/img/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="¿Mi empresa necesita registro REPSE?">
+<meta name="twitter:description" content="El criterio de los tres filtros para decidir si necesitas REPSE, con la ley vigente a septiembre de 2026.">
+<meta name="twitter:image" content="https://grupofiscalcontable.com/assets/img/og-image.jpg">
+
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../../assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+
+<style>
+  :root{
+    --navy:#0b2942; --navy-700:#123a63; --navy-600:#1b4b7a; --teal:#2a7f8e;
+    --gold:#c8a24b; --ink:#1a2733; --muted:#566575; --line:#e3e9f0;
+    --bg:#ffffff; --bg-soft:#f4f7fb; --radius:14px;
+    --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{margin:0;font-family:var(--font);color:var(--ink);background:var(--bg);line-height:1.68;font-size:17px;-webkit-font-smoothing:antialiased}
+  a{color:var(--navy-600)}
+  a:hover{color:var(--navy)}
+  .wrap{max-width:760px;margin:0 auto;padding:0 20px}
+
+  .site-header{border-bottom:1px solid var(--line)}
+  .site-header .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
+  .site-header img{height:38px;width:auto;display:block}
+  .site-header a.back{font-weight:600;font-size:.92rem;text-decoration:none;color:var(--muted)}
+  .site-header a.back:hover{color:var(--navy)}
+
+  main{padding:clamp(28px,5vw,52px) 0 60px}
+  .crumbs{font-size:.85rem;color:var(--muted);margin-bottom:22px}
+  .crumbs a{color:var(--muted);text-decoration:none}
+  .crumbs a:hover{text-decoration:underline}
+
+  h1{font-size:clamp(1.8rem,4.4vw,2.6rem);line-height:1.18;letter-spacing:-.02em;color:var(--navy);font-weight:800;margin:0 0 .5em}
+  .standfirst{font-size:1.15rem;color:var(--muted);margin:0 0 1.4em}
+  .meta{font-size:.86rem;color:var(--muted);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:2em}
+
+  h2{font-size:clamp(1.3rem,2.8vw,1.7rem);line-height:1.25;letter-spacing:-.01em;color:var(--navy);font-weight:800;margin:2.4em 0 .6em}
+  h3{font-size:1.12rem;color:var(--navy);font-weight:700;margin:1.6em 0 .4em}
+  p{margin:0 0 1.1em}
+  ul,ol{margin:0 0 1.2em;padding-left:1.3em}
+  li{margin-bottom:.5em}
+  strong{color:var(--navy)}
+
+  .toc{background:var(--bg-soft);border:1px solid var(--line);border-radius:var(--radius);padding:20px 24px;margin:0 0 2.2em}
+  .toc h2{font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);margin:0 0 .7em}
+  .toc ol{margin:0;padding-left:1.2em;font-size:.96rem}
+  .toc li{margin-bottom:.35em}
+  .toc a{text-decoration:none}
+  .toc a:hover{text-decoration:underline}
+
+  .filtros{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin:1.4em 0 1.6em}
+  .filtros .paso{padding:18px 22px;border-top:1px solid var(--line)}
+  .filtros .paso:first-child{border-top:0}
+  .filtros .paso b{display:block;color:var(--navy);margin-bottom:.3em}
+  .filtros .paso .sale{font-size:.94rem;color:var(--muted);margin-top:.4em}
+  .filtros .paso .sale strong{color:var(--teal)}
+
+  .tabla-wrap{overflow-x:auto;margin:1.2em 0 1.6em}
+  table{border-collapse:collapse;width:100%;font-size:.95rem;min-width:460px}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:var(--bg-soft);color:var(--navy);font-weight:700}
+
+  .nota{background:var(--bg-soft);border:1px dashed var(--line);border-radius:12px;padding:16px 20px;font-size:.96rem;color:var(--muted);margin:1.4em 0}
+  .nota strong{color:var(--navy)}
+
+  .limites{background:#fbf7ef;border:1px solid #ecdcbb;border-radius:var(--radius);padding:20px 24px;margin:2.6em 0 1.6em}
+  .limites h2{margin-top:0}
+
+  .cta{background:linear-gradient(120deg,var(--navy),var(--navy-700));color:#dbe6f1;border-radius:var(--radius);padding:26px 28px;margin:2.4em 0 0}
+  .cta h2{color:#fff;margin:0 0 .3em;font-size:1.2rem}
+  .cta p{margin:0 0 1em;color:#c5d3e0}
+  .cta a{display:inline-block;background:var(--gold);color:#241a05;font-weight:700;text-decoration:none;padding:.7em 1.3em;border-radius:999px}
+
+  .fuentes{font-size:.88rem;color:var(--muted);margin-top:2.4em;border-top:1px solid var(--line);padding-top:1.4em}
+  .fuentes h2{font-size:1rem;margin:0 0 .6em}
+  .fuentes li{margin-bottom:.4em}
+
+  .site-footer{border-top:1px solid var(--line);background:#071f33;color:#9db3c6;font-size:.9rem}
+  .site-footer .wrap{padding:26px 20px;display:flex;flex-wrap:wrap;gap:6px 22px;justify-content:space-between}
+  .site-footer a{color:#9db3c6}
+
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://grupofiscalcontable.com/guias/mi-empresa-necesita-repse/#article",
+      "headline": "¿Mi empresa necesita registro REPSE? Guía para saberlo",
+      "description": "Cómo saber si tu empresa está obligada a registrarse en el REPSE o a exigirlo a un proveedor: el criterio de los tres filtros, con la ley vigente a septiembre de 2026.",
+      "inLanguage": "es-MX",
+      "datePublished": "2026-09-09",
+      "dateModified": "2026-09-09",
+      "author": { "@type": "Organization", "name": "Grupo Fiscal Contable", "url": "https://grupofiscalcontable.com/" },
+      "publisher": { "@id": "https://grupofiscalcontable.com/#business" },
+      "isPartOf": { "@id": "https://grupofiscalcontable.com/#website" },
+      "mainEntityOfPage": "https://grupofiscalcontable.com/guias/mi-empresa-necesita-repse/",
+      "about": ["REPSE", "subcontratación de servicios especializados", "Ley Federal del Trabajo", "cumplimiento laboral"]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://grupofiscalcontable.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Guías", "item": "https://grupofiscalcontable.com/guias/" },
+        { "@type": "ListItem", "position": 3, "name": "¿Mi empresa necesita registro REPSE?", "item": "https://grupofiscalcontable.com/guias/mi-empresa-necesita-repse/" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://grupofiscalcontable.com/guias/mi-empresa-necesita-repse/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Quién está obligado a registrarse en el REPSE?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Las personas físicas o morales que presten servicios especializados o ejecuten obras especializadas y que para ello pongan trabajadores propios a disposición de otra empresa (la beneficiaria). El artículo 15 de la Ley Federal del Trabajo exige ese registro ante la Secretaría del Trabajo y Previsión Social. Quien solo vende un bien, o presta un servicio sin poner personal propio dentro de la operación del cliente, no está obligado." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuál es la diferencia entre subcontratación de personal y servicios especializados?",
+          "acceptedAnswer": { "@type": "Answer", "text": "La subcontratación de personal —poner trabajadores propios a disposición de otra empresa para actividades de su objeto social o su actividad preponderante— está prohibida por el artículo 12 de la Ley Federal del Trabajo. Los servicios u obras especializadas sí se permiten cuando no forman parte del objeto social ni de la actividad económica preponderante de la beneficiaria y el prestador está inscrito en el REPSE (artículo 13)." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cada cuánto se renueva el REPSE?",
+          "acceptedAnswer": { "@type": "Answer", "text": "El registro es válido tres años y debe renovarse (artículo 15, segundo párrafo, de la Ley Federal del Trabajo). Conforme a las disposiciones de la STPS, la renovación se solicita en los tres meses previos al vencimiento; si no se renueva a tiempo, la plataforma cierra el módulo y el registro se cancela." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué multa hay por operar sin REPSE cuando se debía tener?",
+          "acceptedAnswer": { "@type": "Answer", "text": "El artículo 1004-C de la Ley Federal del Trabajo prevé multa de 2,000 a 50,000 veces la UMA para quien haga subcontratación de personal o preste servicios de subcontratación sin registro. Con la UMA diaria de 2026 ($117.31), el rango va de 234,620 a 5,865,500 pesos, además de que los pagos no serían deducibles ni acreditables para el cliente (artículo 15-D del Código Fiscal de la Federación)." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué debe verificar la empresa que contrata a un proveedor con REPSE?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Al pagar cada contraprestación, el contratante debe verificar que el proveedor tenga el registro vigente y recabar copia de los CFDI de nómina de los trabajadores del servicio, del recibo bancario del entero de retenciones de ISR, del pago de cuotas al IMSS y de aportaciones al INFONAVIT (artículo 27, fracción V, de la LISR), y de la declaración y el acuse de pago del IVA del periodo (artículo 5, fracción II, de la LIVA). Sin esos comprobantes el gasto no es deducible ni el IVA acreditable." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="https://grupofiscalcontable.com/" aria-label="Grupo Fiscal Contable — inicio"><img src="../../assets/logo.svg" alt="Grupo Fiscal Contable" width="214" height="64"></a>
+    <a class="back" href="https://grupofiscalcontable.com/">Ir al sitio &rsaquo;</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Ruta"><a href="https://grupofiscalcontable.com/">Inicio</a> &rsaquo; <a href="https://grupofiscalcontable.com/guias/">Guías</a> &rsaquo; ¿Mi empresa necesita registro REPSE?</nav>
+
+    <h1>¿Mi empresa necesita registro REPSE? Guía para saberlo</h1>
+    <p class="standfirst">La respuesta depende de tres preguntas encadenadas. Esta guía las ordena en un criterio único —el criterio de los tres filtros— y explica qué obligaciones se activan si la conclusión es que sí necesitas el registro.</p>
+    <p class="meta">Publicado el 9 de septiembre de 2026 &middot; Grupo Fiscal Contable &middot; Normativa vigente a esa fecha</p>
+
+    <nav class="toc" aria-label="Contenido">
+      <h2>En esta guía</h2>
+      <ol>
+        <li><a href="#que-es">¿Qué es el REPSE y quién está obligado a registrarse?</a></li>
+        <li><a href="#diferencia">¿En qué se diferencia la subcontratación de personal de los servicios especializados?</a></li>
+        <li><a href="#objeto-social">¿Qué significa "no forma parte del objeto social ni de la actividad preponderante"?</a></li>
+        <li><a href="#tres-filtros">¿Mi empresa necesita REPSE? El criterio de los tres filtros</a></li>
+        <li><a href="#grupo">¿Los servicios entre empresas del mismo grupo también necesitan REPSE?</a></li>
+        <li><a href="#beneficiario">¿Qué debe verificar la empresa que contrata el servicio?</a></li>
+        <li><a href="#obligaciones">¿Qué obligaciones se activan al obtener el REPSE?</a></li>
+        <li><a href="#renovacion">¿Cada cuánto se renueva el REPSE y qué pasa si no lo haces a tiempo?</a></li>
+        <li><a href="#multas">¿Qué multas y consecuencias fiscales hay por no tener REPSE?</a></li>
+        <li><a href="#hacerlo-solo">¿Puedes hacer el análisis y el trámite tú mismo?</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="que-es">¿Qué es el REPSE y quién está obligado a registrarse?</h2>
+    <p>El REPSE es el padrón público de prestadores de servicios especializados u obras especializadas que administra la Secretaría del Trabajo y Previsión Social (STPS). Está obligada a inscribirse toda persona física o moral que preste un servicio u obra especializada <strong>y que, para hacerlo, ponga trabajadores propios a disposición de otra empresa</strong>. El artículo 15 de la Ley Federal del Trabajo condiciona ese registro a acreditar que se está al corriente de las obligaciones fiscales y de seguridad social.</p>
+    <p>No toda empresa que "presta servicios" entra. Si vendes un bien, o prestas un servicio en el que ningún trabajador tuyo se integra a la operación del cliente ni queda bajo su dirección, no hay puesta a disposición de personal y no necesitas REPSE. La solicitud se hace en repse.stps.gob.mx únicamente con e.firma; la STPS debe resolver dentro de los veinte días siguientes y, si no lo hace tras un requerimiento, el registro se tiene por efectuado.</p>
+    <p>El registro no es un trámite único: caduca a los tres años y la STPS puede negarlo o cancelarlo en cualquier momento si el solicitante deja de cumplir los requisitos de la ley.</p>
+
+    <h2 id="diferencia">¿En qué se diferencia la subcontratación de personal de los servicios especializados?</h2>
+    <p>La <strong>subcontratación de personal está prohibida</strong>. El artículo 12 de la Ley Federal del Trabajo la define como el hecho de que una persona física o moral proporcione o ponga a disposición trabajadores propios en beneficio de otra. Desde la reforma del 23 de abril de 2021, los artículos 15-A a 15-D de esa ley —que regulaban el antiguo esquema de <em>outsourcing</em>— están derogados.</p>
+    <p>Lo que sí se permite es la <strong>subcontratación de servicios especializados o de obras especializadas</strong>: el artículo 13 la autoriza cuando esos servicios u obras no forman parte del objeto social ni de la actividad económica preponderante de la empresa que los recibe, siempre que el prestador esté inscrito en el REPSE. Las agencias de empleo e intermediarios pueden reclutar, seleccionar y capacitar personal sin ser patrones; el patrón es quien se beneficia de los servicios.</p>
+    <p>La frontera, entonces, no es "¿presto un servicio?" sino "¿ese servicio es ajeno al negocio central de mi cliente y puedo probar que es especializado?". Si la respuesta es no, ninguna inscripción vuelve válida la operación.</p>
+
+    <h2 id="objeto-social">¿Qué significa "no forma parte del objeto social ni de la actividad preponderante"?</h2>
+    <p>Son dos pruebas distintas y basta con fallar una. El <strong>objeto social</strong> es lo que la escritura constitutiva dice que la empresa puede hacer; la <strong>actividad económica preponderante</strong> es la que genera la mayor parte de sus ingresos y que la autoridad fiscal registra en la constancia de situación fiscal. Un servicio que aparezca en cualquiera de las dos respecto del cliente no puede contratarse como especializado.</p>
+    <p>Ejemplo de la lógica: una empresa de logística no puede recibir "servicios especializados de operación de almacén" de un tercero que le ponga montacarguistas y almacenistas, porque operar el almacén es su actividad preponderante. La misma empresa sí puede recibir servicios especializados de mantenimiento industrial de la maquinaria, de vigilancia o de auditoría, porque nada de eso es su objeto social ni su fuente principal de ingresos.</p>
+    <p>El artículo 15-D del Código Fiscal de la Federación refuerza esta línea desde el lado fiscal: niega efectos de deducción y acreditamiento a los pagos por poner personal a disposición cuando esos trabajadores abarcan las actividades preponderantes del contratante, o cuando fueron trabajadores del propio contratante transferidos al prestador por cualquier figura jurídica.</p>
+
+    <h2 id="tres-filtros">¿Mi empresa necesita REPSE? El criterio de los tres filtros</h2>
+    <p>Este es el criterio que usamos en Grupo Fiscal Contable para resolver la pregunta. Son tres filtros en orden fijo; el primero que "cierra" da la respuesta. Se construye enteramente con normas públicas —artículos 12 a 15 de la Ley Federal del Trabajo, 15-D del Código Fiscal, 27-V de la LISR, 5-II de la LIVA y las disposiciones de carácter general de la STPS— y cualquiera puede reproducirlo con esas fuentes. Lo distinto es el orden: empezamos por la puesta a disposición de personal, no por el objeto social, porque descarta de golpe a la mayoría de los prestadores que no tenían por qué preocuparse.</p>
+    <div class="filtros">
+      <div class="paso">
+        <b>Filtro 1 &middot; ¿Pones trabajadores propios a disposición de un tercero?</b>
+        Si entregas un bien, o un servicio en el que ningún trabajador tuyo se integra a la operación del cliente ni queda bajo su mando, no hay puesta a disposición.
+        <div class="sale"><strong>No</strong> &rarr; no necesitas REPSE. Fin del análisis. &nbsp;|&nbsp; <strong>Sí</strong> &rarr; pasa al filtro 2. &nbsp;|&nbsp; Si además esos trabajadores fueron transferidos desde el propio cliente, la operación queda sin efectos fiscales aunque te registres (art. 15-D, fracción I, CFF): hay que reestructurar.</div>
+      </div>
+      <div class="paso">
+        <b>Filtro 2 &middot; ¿El servicio forma parte del objeto social o de la actividad preponderante del cliente?</b>
+        Basta con que aparezca en una de las dos.
+        <div class="sale"><strong>Sí</strong> &rarr; es subcontratación de personal prohibida (art. 12 LFT). No hay registro que la vuelva válida; hay que reestructurar. &nbsp;|&nbsp; <strong>No</strong> &rarr; pasa al filtro 3.</div>
+      </div>
+      <div class="paso">
+        <b>Filtro 3 &middot; ¿Puedes acreditar la especialización y estar al corriente?</b>
+        A la fecha de la solicitud necesitas opinión de cumplimiento positiva ante SAT, IMSS e INFONAVIT; que la actividad esté en tu objeto social (morales) o en tu constancia de situación fiscal (físicas); y documentación del carácter especializado (capacitación, certificaciones, permisos, equipo, experiencia).
+        <div class="sale"><strong>Sí</strong> &rarr; regístrate en el REPSE y activa las obligaciones de la sección siguiente. &nbsp;|&nbsp; <strong>No</strong> &rarr; no calificas hoy; regulariza antes de solicitar.</div>
+      </div>
+    </div>
+    <p>Las tres salidas posibles son: <strong>no aplica</strong>, <strong>prohibido &mdash; reestructurar</strong> y <strong>regístrate y activa</strong>. La segunda es la que más sorprende a quien llega buscando "cómo saco mi REPSE": a veces la conclusión correcta es que el servicio nunca debió plantearse como subcontratación.</p>
+
+    <h2 id="grupo">¿Los servicios entre empresas del mismo grupo también necesitan REPSE?</h2>
+    <p>Sí, con la misma regla. El segundo párrafo del artículo 13 de la Ley Federal del Trabajo dice que los servicios u obras complementarias o compartidas entre empresas de un mismo grupo empresarial se consideran especializados <strong>solo si no forman parte del objeto social ni de la actividad preponderante</strong> de la empresa que los recibe. Pertenecer al mismo grupo no exime del registro ni de las demás obligaciones.</p>
+    <p>"Grupo empresarial" no es un término libre: el artículo 13 remite a la definición del artículo 2, fracción X, de la Ley del Mercado de Valores. En la práctica esto abarca los esquemas habituales de servicios corporativos compartidos —una empresa del grupo que factura administración, contabilidad, sistemas o recursos humanos a las demás—. Cada una de esas empresas prestadoras necesita su propio REPSE y presenta sus propios informes ICSOE y SISUB por los contratos intragrupo.</p>
+
+    <h2 id="beneficiario">¿Qué debe verificar la empresa que contrata el servicio?</h2>
+    <p>La empresa beneficiaria tiene obligaciones aunque no sea ella la que se registra. Cada vez que paga la contraprestación debe verificar que el proveedor tenga el REPSE vigente y recabar comprobantes; si no lo hace, el gasto no es deducible y el IVA no es acreditable.</p>
+    <p>El artículo 27, fracción V, de la Ley del Impuesto sobre la Renta obliga al contratante a obtener del proveedor copia de: los CFDI por pago de salarios de los trabajadores del servicio, el recibo bancario del entero de las retenciones de impuestos de esos trabajadores, el pago de cuotas obrero-patronales al IMSS y el pago de aportaciones al INFONAVIT. El artículo 5, fracción II, de la Ley del IVA añade la copia de la declaración del IVA y del acuse de pago del periodo, que el proveedor debe entregar a más tardar el último día del mes siguiente a aquel en que se pagó; si el contratante no la recibe en plazo, debe presentar declaración complementaria y disminuir lo que hubiera acreditado.</p>
+    <p>Además, tanto el artículo 14 de la Ley Federal del Trabajo como el 15-A de la Ley del Seguro Social establecen <strong>responsabilidad solidaria</strong> del contratante frente a los trabajadores del proveedor si este incumple sus obligaciones laborales o de seguridad social.</p>
+
+    <h2 id="obligaciones">¿Qué obligaciones se activan al obtener el REPSE?</h2>
+    <p>Registrarse es el principio, no el final. A partir de la inscripción corren cuatro obligaciones permanentes: contrato por escrito, informe ICSOE ante el IMSS, informe SISUB ante el INFONAVIT y entrega de comprobantes fiscales al cliente. Las dos informativas se presentan en el mismo calendario: <strong>a más tardar el día 17 de enero, mayo y septiembre</strong>, por el cuatrimestre anterior.</p>
+    <div class="tabla-wrap">
+    <table>
+      <thead><tr><th>Obligación</th><th>Fundamento</th><th>Plazo</th></tr></thead>
+      <tbody>
+        <tr><td>Contrato por escrito (objeto y número aproximado de trabajadores)</td><td>Art. 14 LFT</td><td>Antes de iniciar el servicio</td></tr>
+        <tr><td>Informe ICSOE (datos de las partes, del contrato y de los trabajadores: nombre, CURP, NSS, salario base de cotización)</td><td>Art. 15-A LSS</td><td>Cuatrimestral, día 17 de enero, mayo y septiembre</td></tr>
+        <tr><td>Informe SISUB (contratos, trabajadores vinculados y datos del beneficiario)</td><td>Art. 29 Bis Ley del INFONAVIT</td><td>Cuatrimestral, día 17 de enero, mayo y septiembre</td></tr>
+        <tr><td>Entrega al cliente de CFDI de nómina, enteros de retenciones, cuotas IMSS, aportaciones INFONAVIT y declaración de IVA</td><td>Art. 27-V LISR y 5-II LIVA</td><td>Cada vez que el cliente paga; el IVA, a más tardar fin del mes siguiente</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>El informe ICSOE se presenta en el Escritorio Virtual del IMSS y el SISUB en el Portal Empresarial del INFONAVIT, adjuntando el registro STPS, la escritura constitutiva y los contratos. Omitir cualquiera de las dos informativas es causa de que el IMSS o el INFONAVIT den vista a la STPS para efectos de cancelación del registro.</p>
+
+    <h2 id="renovacion">¿Cada cuánto se renueva el REPSE y qué pasa si no lo haces a tiempo?</h2>
+    <p>El REPSE <strong>se renueva cada tres años</strong>. Lo dice el segundo párrafo del artículo 15 de la Ley Federal del Trabajo, y las disposiciones de carácter general de la STPS precisan cómo: la renovación se solicita <strong>en los tres meses previos</strong> al vencimiento del registro vigente.</p>
+    <p>Si dejas pasar esa ventana, la plataforma cierra automáticamente el módulo de renovación y el registro se cancela. No hay prórroga ni renovación extemporánea: el efecto práctico es que tienes que iniciar un registro nuevo desde cero, y entre la caducidad y la nueva inscripción tu operación queda sin cobertura —los pagos que reciba tu cliente en ese lapso no serían deducibles para él—. Por eso conviene tratar la fecha de vencimiento como una obligación de calendario, no como un recordatorio.</p>
+
+    <h2 id="multas">¿Qué multas y consecuencias fiscales hay por no tener REPSE?</h2>
+    <p>La sanción directa es alta y la indirecta suele serlo más. El artículo 1004-C de la Ley Federal del Trabajo impone multa de <strong>2,000 a 50,000 veces la UMA</strong> a quien haga subcontratación de personal (art. 12) o preste servicios de subcontratación sin el registro de los artículos 14 y 15. Con la UMA diaria vigente en 2026 —117.31 pesos, según el INEGI—, el rango va de <strong>234,620 a 5,865,500 pesos</strong> por empresa infractora.</p>
+    <div class="tabla-wrap">
+    <table>
+      <thead><tr><th>Consecuencia</th><th>A quién afecta</th><th>Fundamento</th></tr></thead>
+      <tbody>
+        <tr><td>Multa de 234,620 a 5,865,500 pesos (2,000 a 50,000 UMA)</td><td>Prestador sin registro; quien subcontrata personal</td><td>Art. 1004-C LFT</td></tr>
+        <tr><td>Los pagos no son deducibles ni el IVA acreditable</td><td>Empresa cliente (beneficiaria)</td><td>Art. 15-D CFF, 27-V LISR, 5-II LIVA</td></tr>
+        <tr><td>Responsabilidad solidaria por los trabajadores</td><td>Empresa cliente</td><td>Art. 14 LFT, 15-A LSS</td></tr>
+        <tr><td>Riesgo penal por defraudación fiscal si se simula un servicio especializado</td><td>Ambas partes</td><td>Postura conjunta STPS-SAT (comunicado 019/2023)</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>La STPS ya inició la fase de inspección de cumplimiento del REPSE, con verificación conjunta con el IMSS y el SAT. En la práctica, el golpe fiscal para el cliente —rechazo de deducciones y de IVA acreditable de varios ejercicios— es mayor que la multa laboral para el prestador.</p>
+
+    <h2 id="hacerlo-solo">¿Puedes hacer el análisis y el trámite tú mismo?</h2>
+    <p>Sí. El criterio de los tres filtros está publicado completo en esta guía y se apoya solo en normas públicas. Con la constancia de situación fiscal del cliente, tu acta constitutiva y el contrato, tu empresa puede autoevaluarse; y el registro se hace en repse.stps.gob.mx con tu e.firma sin intermediario obligatorio.</p>
+    <p>Conviene apoyarse en un despacho en tres situaciones concretas: cuando el caso está en zona gris y hay que sostener la clasificación de "especializado" ante una inspección conjunta STPS-SAT-IMSS; cuando ya llegó un requerimiento o una carta invitación; y cuando no quieres cargar con los informes ICSOE y SISUB cada cuatrimestre, que son la parte que consume tiempo de forma recurrente. El registro inicial es puntual; el cumplimiento posterior es lo que pesa.</p>
+
+    <section class="limites">
+      <h2>Qué no cubre esta guía</h2>
+      <ul>
+        <li>La normativa citada está vigente a la fecha de publicación (9 de septiembre de 2026). Los artículos de ley pueden reformarse y el valor de la UMA se actualiza cada febrero.</li>
+        <li>No sustituye el análisis del caso concreto. La calificación de un servicio como "especializado" depende de hechos —objeto social, actividad preponderante real, contrato, forma de operación— que hay que revisar uno por uno.</li>
+        <li>El texto artículo por artículo de las disposiciones de carácter general de la STPS se consultó en parte a través de fuentes oficiales secundarias (el acuerdo modificatorio y las páginas de la STPS), no en la versión consolidada completa. El listado íntegro de causales de negativa y cancelación del registro no se transcribe aquí.</li>
+        <li>No incluye cifras del padrón (número de empresas registradas o rechazadas).</li>
+      </ul>
+    </section>
+
+    <div class="fuentes">
+      <h2>Fuentes</h2>
+      <ul>
+        <li>Ley Federal del Trabajo, artículos 12, 13, 14, 15 y 1004-C — Cámara de Diputados, texto vigente (última reforma DOF 14-05-2026). <a href="https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf" rel="nofollow">diputados.gob.mx</a></li>
+        <li>Código Fiscal de la Federación, artículo 15-D — última reforma DOF 09-04-2026. <a href="https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf" rel="nofollow">diputados.gob.mx</a></li>
+        <li>Ley del Impuesto sobre la Renta, artículo 27, fracción V. <a href="https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf" rel="nofollow">diputados.gob.mx</a></li>
+        <li>Ley del Impuesto al Valor Agregado, artículo 5, fracción II. <a href="https://www.diputados.gob.mx/LeyesBiblio/pdf/LIVA.pdf" rel="nofollow">diputados.gob.mx</a></li>
+        <li>Ley del Seguro Social, artículo 15-A — última reforma DOF 15-01-2026. <a href="https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf" rel="nofollow">diputados.gob.mx</a></li>
+        <li>Información de Subcontratación (SISUB) y artículo 29 Bis de la Ley del INFONAVIT. <a href="https://portalmx.infonavit.org.mx/wps/portal/infonavitmx/mx2/patrones/mis_obligaciones/sisub/" rel="nofollow">infonavit.org.mx</a></li>
+        <li>Valor de la UMA 2026 ($117.31 diaria, vigente desde el 1 de febrero de 2026) — INEGI, Comunicado de prensa 1/26. <a href="https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2026/uma/uma2026.pdf" rel="nofollow">inegi.org.mx</a></li>
+        <li>Reforma en materia de subcontratación y disposiciones de carácter general del REPSE — Secretaría del Trabajo y Previsión Social. <a href="https://www.gob.mx/stps/articulos/reforma-en-materia-de-subcontratacion" rel="nofollow">gob.mx/stps</a></li>
+        <li>"La subcontratación de personal está prohibida" — Servicio de Administración Tributaria, comunicado 019/2023. <a href="https://www.gob.mx/sat/prensa/la-subcontratacion-de-personal-esta-prohibida-stps-y-sat-exhortan-a-prestadores-de-servicios-a-evitar-incurrir-en-defraudacion-fiscal-019-2023" rel="nofollow">gob.mx/sat</a></li>
+      </ul>
+      <p>El <strong>criterio de los tres filtros</strong> es de Grupo Fiscal Contable (Mineral de la Reforma, Hidalgo), 9 de septiembre de 2026, elaborado a partir de las fuentes anteriores.</p>
+    </div>
+
+    <div class="cta">
+      <h2>¿Tu caso está en zona gris?</h2>
+      <p>Revisamos si tu servicio califica como especializado, sostenemos la clasificación ante la autoridad y llevamos los informes ICSOE y SISUB por ti.</p>
+      <a href="https://grupofiscalcontable.com/#contacto">Solicitar diagnóstico sin costo</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; 2026 Grupo Fiscal Contable — El Saucillo, Mineral de la Reforma, Hidalgo.</span>
+    <span><a href="https://grupofiscalcontable.com/">grupofiscalcontable.com</a> &middot; <a href="tel:+527716620861">771 662 0861</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
