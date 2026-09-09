@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>¿Me conviene el RESICO? Guía de decisión para PyMEs y personas físicas</title>
+<meta name="description" content="Cuándo conviene el RESICO y cuándo no: el criterio del margen para decidir, con la elegibilidad, las tasas y las reglas de salida, según la LISR vigente en 2026.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0b2942">
+<link rel="canonical" href="https://grupofiscalcontable.com/guias/me-conviene-resico/">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Grupo Fiscal Contable">
+<meta property="og:locale" content="es_MX">
+<meta property="og:title" content="¿Me conviene el RESICO? Guía de decisión para PyMEs y personas físicas">
+<meta property="og:description" content="El criterio del margen para decidir si el RESICO te conviene, con la elegibilidad y las tasas según la LISR vigente en 2026.">
+<meta property="og:url" content="https://grupofiscalcontable.com/guias/me-conviene-resico/">
+<meta property="og:image" content="https://grupofiscalcontable.com/assets/img/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="¿Me conviene el RESICO?">
+<meta name="twitter:description" content="El criterio del margen para decidir, con la LISR vigente en 2026.">
+<meta name="twitter:image" content="https://grupofiscalcontable.com/assets/img/og-image.jpg">
+
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../../assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+
+<style>
+  :root{
+    --navy:#0b2942; --navy-700:#123a63; --navy-600:#1b4b7a; --teal:#2a7f8e;
+    --gold:#c8a24b; --ink:#1a2733; --muted:#566575; --line:#e3e9f0;
+    --bg:#ffffff; --bg-soft:#f4f7fb; --radius:14px;
+    --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{margin:0;font-family:var(--font);color:var(--ink);background:var(--bg);line-height:1.68;font-size:17px;-webkit-font-smoothing:antialiased}
+  a{color:var(--navy-600)}
+  a:hover{color:var(--navy)}
+  .wrap{max-width:760px;margin:0 auto;padding:0 20px}
+
+  .site-header{border-bottom:1px solid var(--line)}
+  .site-header .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
+  .site-header img{height:38px;width:auto;display:block}
+  .site-header a.back{font-weight:600;font-size:.92rem;text-decoration:none;color:var(--muted)}
+  .site-header a.back:hover{color:var(--navy)}
+
+  main{padding:clamp(28px,5vw,52px) 0 60px}
+  .crumbs{font-size:.85rem;color:var(--muted);margin-bottom:22px}
+  .crumbs a{color:var(--muted);text-decoration:none}
+  .crumbs a:hover{text-decoration:underline}
+
+  h1{font-size:clamp(1.8rem,4.4vw,2.6rem);line-height:1.18;letter-spacing:-.02em;color:var(--navy);font-weight:800;margin:0 0 .5em}
+  .standfirst{font-size:1.15rem;color:var(--muted);margin:0 0 1.4em}
+  .meta{font-size:.86rem;color:var(--muted);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:2em}
+
+  h2{font-size:clamp(1.3rem,2.8vw,1.7rem);line-height:1.25;letter-spacing:-.01em;color:var(--navy);font-weight:800;margin:2.4em 0 .6em}
+  h3{font-size:1.12rem;color:var(--navy);font-weight:700;margin:1.6em 0 .4em}
+  p{margin:0 0 1.1em}
+  ul,ol{margin:0 0 1.2em;padding-left:1.3em}
+  li{margin-bottom:.5em}
+  strong{color:var(--navy)}
+
+  .toc{background:var(--bg-soft);border:1px solid var(--line);border-radius:var(--radius);padding:20px 24px;margin:0 0 2.2em}
+  .toc h2{font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);margin:0 0 .7em}
+  .toc ol{margin:0;padding-left:1.2em;font-size:.96rem}
+  .toc li{margin-bottom:.35em}
+  .toc a{text-decoration:none}
+  .toc a:hover{text-decoration:underline}
+
+  .pasos{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin:1.4em 0 1.6em}
+  .pasos .p{padding:18px 22px;border-top:1px solid var(--line)}
+  .pasos .p:first-child{border-top:0}
+  .pasos .p b{display:block;color:var(--navy);margin-bottom:.3em}
+  .pasos .p .r{font-size:.95rem;color:var(--muted);margin-top:.5em}
+  .pasos .p .r strong{color:var(--teal)}
+
+  .tabla-wrap{overflow-x:auto;margin:1.2em 0 1.6em}
+  table{border-collapse:collapse;width:100%;font-size:.95rem;min-width:460px}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:var(--bg-soft);color:var(--navy);font-weight:700}
+
+  .nota{background:var(--bg-soft);border:1px dashed var(--line);border-radius:12px;padding:16px 20px;font-size:.96rem;color:var(--muted);margin:1.4em 0}
+  .nota strong{color:var(--navy)}
+
+  .limites{background:#fbf7ef;border:1px solid #ecdcbb;border-radius:var(--radius);padding:20px 24px;margin:2.6em 0 1.6em}
+  .limites h2{margin-top:0}
+
+  .cta{background:linear-gradient(120deg,var(--navy),var(--navy-700));color:#dbe6f1;border-radius:var(--radius);padding:26px 28px;margin:2.4em 0 0}
+  .cta h2{color:#fff;margin:0 0 .3em;font-size:1.2rem}
+  .cta p{margin:0 0 1em;color:#c5d3e0}
+  .cta a{display:inline-block;background:var(--gold);color:#241a05;font-weight:700;text-decoration:none;padding:.7em 1.3em;border-radius:999px}
+
+  .fuentes{font-size:.88rem;color:var(--muted);margin-top:2.4em;border-top:1px solid var(--line);padding-top:1.4em}
+  .fuentes h2{font-size:1rem;margin:0 0 .6em}
+  .fuentes li{margin-bottom:.4em}
+
+  .site-footer{border-top:1px solid var(--line);background:#071f33;color:#9db3c6;font-size:.9rem}
+  .site-footer .wrap{padding:26px 20px;display:flex;flex-wrap:wrap;gap:6px 22px;justify-content:space-between}
+  .site-footer a{color:#9db3c6}
+
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://grupofiscalcontable.com/guias/me-conviene-resico/#article",
+      "headline": "¿Me conviene el RESICO? Guía de decisión para PyMEs y personas físicas",
+      "description": "Cuándo conviene el RESICO y cuándo no: el criterio del margen para decidir, con la elegibilidad, las tasas y las reglas de salida, según la LISR vigente en 2026.",
+      "inLanguage": "es-MX",
+      "datePublished": "2026-09-09",
+      "dateModified": "2026-09-09",
+      "author": { "@type": "Organization", "name": "Grupo Fiscal Contable", "url": "https://grupofiscalcontable.com/" },
+      "publisher": { "@id": "https://grupofiscalcontable.com/#business" },
+      "isPartOf": { "@id": "https://grupofiscalcontable.com/#website" },
+      "mainEntityOfPage": "https://grupofiscalcontable.com/guias/me-conviene-resico/",
+      "about": ["RESICO", "Régimen Simplificado de Confianza", "Ley del Impuesto sobre la Renta", "régimen fiscal", "PyMEs"]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://grupofiscalcontable.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Guías", "item": "https://grupofiscalcontable.com/guias/" },
+        { "@type": "ListItem", "position": 3, "name": "¿Me conviene el RESICO?", "item": "https://grupofiscalcontable.com/guias/me-conviene-resico/" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://grupofiscalcontable.com/guias/me-conviene-resico/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cuál es el límite de ingresos para el RESICO de personas físicas?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Tres millones quinientos mil pesos de ingresos propios de la actividad en el ejercicio inmediato anterior, según el artículo 113-E de la Ley del Impuesto sobre la Renta. Si en cualquier momento del año los ingresos superan esa cantidad, el contribuyente deja el RESICO a partir del mes siguiente. El RESICO de personas morales tiene un límite de 35 millones de pesos." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué tasa de ISR se paga en el RESICO de personas físicas?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Entre 1% y 2.5% sobre los ingresos amparados por CFDI efectivamente cobrados, sin IVA y sin aplicar deducciones: 1% hasta 25,000 pesos mensuales, 1.10% hasta 50,000, 1.50% hasta 83,333.33, 2% hasta 208,333.33 y 2.5% hasta 3,500,000. Es una tasa sobre ingresos brutos, no sobre la utilidad." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Un socio o accionista de una sociedad mercantil puede tributar en RESICO?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. El artículo 113-E de la LISR excluye del RESICO de personas físicas a quienes sean socios, accionistas o integrantes de personas morales, o partes relacionadas en términos del artículo 90. La restricción aplica sin importar el nivel de ingresos." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuándo conviene el RESICO frente al régimen general?",
+          "acceptedAnswer": { "@type": "Answer", "text": "El RESICO grava los ingresos brutos a una tasa baja; el régimen general grava la utilidad a una tarifa progresiva de hasta 35%. Conviene el RESICO cuando el margen de utilidad es alto y hay pocos gastos deducibles (servicios profesionales, honorarios, arrendamiento). Conviene el régimen general cuando hay muchos gastos deducibles y el margen es bajo (comercio, manufactura con inventario y nómina)." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto retienen las personas morales a un contribuyente en RESICO?",
+          "acceptedAnswer": { "@type": "Answer", "text": "El 1.25% sobre el monto del pago, sin IVA, según el artículo 113-J de la LISR. La persona moral entera esa retención a más tardar el día 17 del mes siguiente y la persona física la acredita en su pago mensual, así que no aumenta el impuesto final, solo adelanta parte del pago." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="https://grupofiscalcontable.com/" aria-label="Grupo Fiscal Contable — inicio"><img src="../../assets/logo.svg" alt="Grupo Fiscal Contable" width="214" height="64"></a>
+    <a class="back" href="https://grupofiscalcontable.com/">Ir al sitio &rsaquo;</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Ruta"><a href="https://grupofiscalcontable.com/">Inicio</a> &rsaquo; <a href="https://grupofiscalcontable.com/guias/">Guías</a> &rsaquo; ¿Me conviene el RESICO?</nav>
+
+    <h1>¿Me conviene el RESICO? Guía de decisión para PyMEs y personas físicas</h1>
+    <p class="standfirst">El RESICO no es "el régimen que paga menos": es el que grava los ingresos brutos en vez de la utilidad. Cuál te conviene depende de una sola variable —tu margen— y de si eres elegible. Esta guía ordena las dos preguntas en un criterio único.</p>
+    <p class="meta">Publicado el 9 de septiembre de 2026 &middot; Grupo Fiscal Contable &middot; Disposiciones de la LISR vigentes en 2026</p>
+
+    <nav class="toc" aria-label="Contenido">
+      <h2>En esta guía</h2>
+      <ol>
+        <li><a href="#que-es">¿Qué es el RESICO y qué versiones hay?</a></li>
+        <li><a href="#cuanto">¿Cuánto se paga de ISR en el RESICO de personas físicas?</a></li>
+        <li><a href="#quien-no">¿Quién no puede tributar en el RESICO?</a></li>
+        <li><a href="#criterio-margen">¿Me conviene el RESICO? El criterio del margen</a></li>
+        <li><a href="#morales">¿Cómo funciona el RESICO de personas morales?</a></li>
+        <li><a href="#obligaciones">¿Qué obligaciones tengo, y de cuáles me libro, en el RESICO?</a></li>
+        <li><a href="#retencion">Si me facturan personas morales, ¿qué me retienen?</a></li>
+        <li><a href="#salida">¿Cómo y cuándo salgo del RESICO, y puedo volver?</a></li>
+        <li><a href="#perdidas">¿El RESICO me conviene si tengo pérdidas o si invierto fuerte este año?</a></li>
+        <li><a href="#solo">¿Puedo decidir esto yo mismo o necesito un contador?</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="que-es">¿Qué es el RESICO y qué versiones hay?</h2>
+    <p>El Régimen Simplificado de Confianza (RESICO) es un régimen del impuesto sobre la renta que grava los ingresos con tasas bajas a cambio de no permitir deducciones (personas físicas) o de simplificar el cálculo (personas morales). Existe desde 2022 y tiene dos versiones separadas en la Ley del Impuesto sobre la Renta.</p>
+    <p>El <strong>RESICO de personas físicas</strong> (artículos 113-E a 113-J) es para quien realiza actividades empresariales, profesionales o de arrendamiento con ingresos de hasta <strong>3,500,000 pesos</strong> al año. El <strong>RESICO de personas morales</strong> (artículos 206 a 215) es para sociedades residentes en México constituidas solo por personas físicas, con ingresos de hasta <strong>35,000,000 pesos</strong> al año. Son regímenes distintos, con reglas distintas; esta guía trata sobre todo el de personas físicas, que es donde más se plantea la pregunta de si conviene.</p>
+
+    <h2 id="cuanto">¿Cuánto se paga de ISR en el RESICO de personas físicas?</h2>
+    <p>Entre 1% y 2.5% sobre los ingresos cobrados, sin restar gastos. La tasa sube por escalones según el ingreso del mes, conforme a la tabla del artículo 113-E de la LISR. El pago es mensual, a más tardar el día 17 del mes siguiente, y hay declaración anual en abril con la misma tabla en versión anual.</p>
+    <div class="tabla-wrap">
+    <table>
+      <thead><tr><th>Ingresos del mes (CFDI cobrados, sin IVA)</th><th>Tasa de ISR</th></tr></thead>
+      <tbody>
+        <tr><td>Hasta $25,000</td><td>1.00%</td></tr>
+        <tr><td>Hasta $50,000</td><td>1.10%</td></tr>
+        <tr><td>Hasta $83,333.33</td><td>1.50%</td></tr>
+        <tr><td>Hasta $208,333.33</td><td>2.00%</td></tr>
+        <tr><td>Hasta $3,500,000</td><td>2.50%</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>La clave es que la tasa se aplica al <strong>ingreso bruto</strong>. En el régimen general de actividad empresarial y profesional, el ISR se calcula sobre la <strong>utilidad</strong> —ingresos menos deducciones autorizadas— con una tarifa progresiva que llega al 35%. Esa diferencia de base es lo que hace que el RESICO convenga a unos y perjudique a otros.</p>
+
+    <h2 id="quien-no">¿Quién no puede tributar en el RESICO?</h2>
+    <p>La elegibilidad se revisa antes que la conveniencia, porque hay exclusiones que no dependen del monto de ingresos. En el RESICO de personas físicas, el artículo 113-E excluye a quien:</p>
+    <ul>
+      <li>Sea <strong>socio, accionista o integrante de una persona moral</strong>, o <strong>parte relacionada</strong> en términos del artículo 90 de la LISR.</li>
+      <li>Sea residente en el extranjero con uno o varios establecimientos permanentes en el país.</li>
+      <li>Tenga ingresos sujetos a regímenes fiscales preferentes.</li>
+      <li>Perciba ingresos asimilados de los señalados en las fracciones III a VI del artículo 94 (honorarios a consejeros, honorarios preponderantes de un solo prestatario, honorarios a quien además es su patrón, y quienes opten por asimilar su actividad empresarial).</li>
+    </ul>
+    <p>La primera exclusión es la que más sorprende: si tienes una S.A. de C.V. o una S. de R.L. y eres socio —aunque tu actividad como persona física sea otra y de bajo ingreso—, no puedes usar el RESICO de personas físicas. En el RESICO de personas morales, la exclusión equivalente es que ningún socio tenga el control de otra sociedad mercantil.</p>
+
+    <h2 id="criterio-margen">¿Me conviene el RESICO? El criterio del margen</h2>
+    <p>Este es el criterio que usamos en Grupo Fiscal Contable. Son dos pasos, y el primero manda: si no eres elegible, la conveniencia no importa. El segundo se decide con una sola variable, el margen de utilidad del negocio, porque el RESICO grava el ingreso y el régimen general grava la utilidad.</p>
+    <div class="pasos">
+      <div class="p">
+        <b>Paso 1 &middot; ¿Puedo?</b>
+        Ingresos del año anterior dentro del límite ($3.5 millones persona física, $35 millones persona moral); no ser socio o accionista de una persona moral ni parte relacionada; no percibir ingresos del artículo 94, fracciones III a VI, ni de regímenes preferentes.
+        <div class="r">Si cualquiera falla &rarr; <strong>el RESICO no es opción</strong>, sin importar la conveniencia.</div>
+      </div>
+      <div class="p">
+        <b>Paso 2 &middot; ¿Me conviene? Compara dos números del año anterior</b>
+        La tasa del RESICO (1% a 2.5%) aplicada a tus <strong>ingresos</strong> cobrados, contra el ISR sobre tu <strong>utilidad real</strong> (ingresos menos deducciones) con la tarifa del artículo 152.
+        <div class="r">
+          <strong>Margen alto, pocos gastos</strong> (servicios profesionales, honorarios, arrendamiento) &rarr; el RESICO casi siempre gana.<br>
+          <strong>Margen bajo, muchos gastos</strong> (comercio con inventario, manufactura ligera, negocios con nómina) &rarr; el régimen general suele ganar, porque en el RESICO pagas sobre ventas brutas aunque tu utilidad sea pequeña.<br>
+          <strong>Zona intermedia</strong> &rarr; hay que calcularlo con las cifras propias.
+        </div>
+      </div>
+    </div>
+    <p>El error más común es elegir el RESICO por la tasa baja sin mirar el margen. Un negocio de reventa con 8% de utilidad que factura 2 millones pagaría cerca de 40,000 pesos de RESICO (2% de 2 millones), cuando su ISR sobre una utilidad de 160,000 sería bastante menor. La tasa baja no compensa gravar el ingreso completo.</p>
+
+    <h2 id="morales">¿Cómo funciona el RESICO de personas morales?</h2>
+    <p>El RESICO de personas morales no aplica una tasa fija sobre ingresos: calcula el ISR sobre la utilidad, como el Título II, pero con dos simplificaciones. La primera es que trabaja en <strong>flujo de efectivo</strong>: los ingresos se acumulan cuando se cobran y las deducciones se aplican cuando se pagan (artículos 207 y 208). La segunda es que permite <strong>deducir las inversiones más rápido</strong>, con los porcientos del artículo 209, siempre que el total de inversiones del ejercicio no pase de 3 millones de pesos.</p>
+    <p>Los pagos provisionales son mensuales, el día 17, restando de los ingresos percibidos las deducciones erogadas, la PTU pagada y las pérdidas de años anteriores (artículo 211). Para entrar, la sociedad debe estar constituida <strong>únicamente por personas físicas</strong>, tener ingresos de hasta 35 millones y que ningún socio controle otra sociedad mercantil ni sea parte relacionada (artículo 206). Para una PyME que reinvierte y cobra a plazos, el flujo de efectivo y la deducción acelerada de inversiones suelen ser una ventaja real frente al Título II.</p>
+
+    <h2 id="obligaciones">¿Qué obligaciones tengo, y de cuáles me libro, en el RESICO?</h2>
+    <p>El RESICO de personas físicas concentra las obligaciones en tres: RFC actualizado, <strong>e.firma y buzón tributario activo</strong>, y CFDI —emitidos por todos los ingresos y conservados por todos los gastos— (artículo 113-G). La declaración anual se presenta en abril (artículo 113-F).</p>
+    <p>De lo que te libras: el RESICO de personas físicas <strong>no presenta contabilidad electrónica, ni DIOT, ni declaraciones informativas</strong>. Para un profesional independiente o un arrendador, eso elimina el grueso del trabajo mensual y de los honorarios contables. Es un factor real en la decisión, además del impuesto: incluso si el RESICO y el régimen general dieran un impuesto parecido, el ahorro de carga administrativa inclina la balanza hacia el RESICO.</p>
+
+    <h2 id="retencion">Si me facturan personas morales, ¿qué me retienen?</h2>
+    <p>El <strong>1.25%</strong> sobre el monto del pago, sin IVA. Lo establece el artículo 113-J de la LISR: cuando una persona física del RESICO le factura a una persona moral, esta debe retener ese 1.25% como pago mensual del ISR, enterarlo a más tardar el día 17 del mes siguiente y entregar el CFDI de retención.</p>
+    <p>Esa retención <strong>no aumenta tu impuesto</strong>: la acreditas en tu pago mensual, así que solo adelanta una parte. Pero sí afecta el flujo, sobre todo si tu tasa efectiva del RESICO es 1% o 1.10% y te retienen 1.25%: en ese caso terminas con saldo a favor que hay que recuperar. Si tu clientela es mayoritariamente de empresas, conviene contemplar ese efecto al comparar regímenes.</p>
+
+    <h2 id="salida">¿Cómo y cuándo salgo del RESICO, y puedo volver?</h2>
+    <p>Se sale del RESICO de personas físicas por tres vías: exceder los 3,500,000 pesos en cualquier momento del año, <strong>omitir tres o más pagos mensuales</strong> en un año calendario (consecutivos o no), o <strong>no presentar la declaración anual</strong> (artículos 113-E y 113-I). En los dos últimos casos, además, se pierde el derecho a volver: quien deja el RESICO por incumplir sus obligaciones <strong>no puede tributar de nuevo en él nunca</strong>.</p>
+    <p>Quien lo deja solo por rebasar el límite de ingresos sí puede regresar, siempre que el año anterior no haya vuelto a excederlo y esté al corriente. En el RESICO de personas morales, quien deja de cumplir los requisitos pasa al Título II a partir del ejercicio siguiente y debe presentar un aviso de actualización de actividades y obligaciones a más tardar el 31 de enero (artículo 214).</p>
+
+    <h2 id="perdidas">¿El RESICO me conviene si tengo pérdidas o si invierto fuerte este año?</h2>
+    <p>Probablemente no, en el RESICO de personas físicas. Ahí no se deducen las pérdidas fiscales de años anteriores ni se aplican estímulos como la deducción inmediata de inversiones, y no se pueden combinar con otros beneficios fiscales (artículo 113-I). Si vienes de un año malo con una pérdida por amortizar, o si este año vas a comprar maquinaria o equipo importante, el régimen general conserva esos escudos y el RESICO los desperdicia.</p>
+    <p>El RESICO de personas morales es distinto en este punto: sí permite disminuir pérdidas de ejercicios anteriores en los pagos provisionales (artículo 211) y deducir inversiones de forma acelerada (artículo 209). Para una sociedad que reinvierte utilidades, esa combinación puede pesar más que la simple tasa. La regla general: entre más "escudos fiscales" tengas —pérdidas, inversiones, gastos altos—, menos atractivo es el RESICO de personas físicas y más hay que analizar el de morales o el Título II.</p>
+
+    <h2 id="solo">¿Puedo decidir esto yo mismo o necesito un contador?</h2>
+    <p>La comparación básica la puedes hacer tú: toma tus ingresos y tu utilidad real del año pasado, aplica la tasa del RESICO a los primeros y la tarifa del artículo 152 a la segunda, y compara. Si tu margen es claramente alto o claramente bajo, el resultado es evidente sin más ayuda.</p>
+    <p>Conviene revisarlo con un contador en tres situaciones: cuando la elegibilidad está en duda —tienes participación en alguna sociedad, hay operaciones entre personas de la familia que podrían ser partes relacionadas, o recibes honorarios de tipos especiales—; cuando tu margen está en la zona intermedia y la diferencia entre regímenes es de pocos miles de pesos; y cuando el cambio de régimen arrastra otros efectos —pérdidas por amortizar, saldos a favor de IVA, la retención del 1.25%— que no se ven en la comparación simple.</p>
+
+    <section class="limites">
+      <h2>Qué no cubre esta guía</h2>
+      <ul>
+        <li>Las disposiciones del RESICO citadas están vigentes para 2026; la LISR no tuvo reforma en el paquete económico de ese año. Las reglas operativas de la Resolución Miscelánea Fiscal (facilidades, formatos, transición) se actualizan cada año y aquí solo se mencionan.</li>
+        <li>No incluye la tarifa completa del artículo 152 con sus rangos y cuotas; se cita su existencia y su tasa marginal máxima de 35%.</li>
+        <li>No cifra puntos de equilibrio exactos entre regímenes: el resultado depende del nivel de ingreso y de la mezcla de gastos de cada contribuyente, y hay que calcularlo caso por caso.</li>
+        <li>Trata el impuesto sobre la renta. El tratamiento del IVA en el RESICO es el general y no se aborda aquí.</li>
+        <li>No incluye cifras sobre cuántos contribuyentes del corredor tributan en RESICO.</li>
+      </ul>
+    </section>
+
+    <div class="fuentes">
+      <h2>Fuentes</h2>
+      <ul>
+        <li>Ley del Impuesto sobre la Renta, artículos 113-E, 113-F, 113-G, 113-I y 113-J (RESICO de personas físicas) — Cámara de Diputados, texto vigente (última reforma DOF 01-04-2024). <a href="https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf" rel="nofollow">diputados.gob.mx</a></li>
+        <li>Ley del Impuesto sobre la Renta, artículos 206, 207, 208, 209, 211 y 214 (RESICO de personas morales). <a href="https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf" rel="nofollow">diputados.gob.mx</a></li>
+        <li>Ley del Impuesto sobre la Renta, artículos 100, 106 y 152 (régimen general de personas físicas con actividad empresarial y profesional). <a href="https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf" rel="nofollow">diputados.gob.mx</a></li>
+        <li>Régimen Simplificado de Confianza para personas físicas — Servicio de Administración Tributaria. <a href="https://www.sat.gob.mx/portal/public/personas-fisicas/pf-simplificado-de-confianza" rel="nofollow">sat.gob.mx</a></li>
+      </ul>
+      <p>El criterio de <strong>el criterio del margen</strong> es de Grupo Fiscal Contable (Mineral de la Reforma, Hidalgo), 9 de septiembre de 2026, elaborado a partir de las fuentes anteriores.</p>
+    </div>
+
+    <div class="cta">
+      <h2>¿Tu margen está en la zona intermedia?</h2>
+      <p>Corremos la comparación con tus cifras reales, revisamos tu elegibilidad y te decimos en qué régimen pagas menos y trabajas menos.</p>
+      <a href="https://grupofiscalcontable.com/#contacto">Solicitar diagnóstico sin costo</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; 2026 Grupo Fiscal Contable — El Saucillo, Mineral de la Reforma, Hidalgo.</span>
+    <span><a href="https://grupofiscalcontable.com/">grupofiscalcontable.com</a> &middot; <a href="tel:+527716620861">771 662 0861</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
