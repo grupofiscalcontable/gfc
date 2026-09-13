@@ -302,6 +302,7 @@ ul{margin:0;padding:0;list-style:none}
 .contact__info .ico{width:26px;height:26px;color:var(--teal);flex:none;margin-top:2px}
 .contact__info b{display:block;color:var(--navy)}
 .contact__info span,.contact__info a{color:var(--muted)}
+.contact__info a{display:inline-block;padding:3px 0}
 .card-form{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:clamp(22px,4vw,34px);box-shadow:var(--shadow-md)}
 .field{margin-bottom:16px}
 .field label{display:block;font-weight:600;font-size:.9rem;margin-bottom:6px;color:var(--navy)}
@@ -344,9 +345,9 @@ ul{margin:0;padding:0;list-style:none}
 .footer__brand img{height:44px;margin-bottom:14px}
 .footer__brand p{max-width:38ch;color:#8ba3b8}
 .footer h4{color:#fff;font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px}
-.footer a{color:#9db3c6}
+.footer a{color:#9db3c6;display:inline-block;padding:3px 0}
 .footer a:hover{color:#fff}
-.footer li{margin-bottom:9px}
+.footer li{margin-bottom:6px}
 .footer__bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;color:#7f97ac;font-size:.85rem}
 @media(max-width:760px){.footer__grid{grid-template-columns:1fr;gap:26px}}
 
@@ -357,7 +358,7 @@ ul{margin:0;padding:0;list-style:none}
 .content-wrap h2{margin-top:2.2em}
 .content-wrap h2:first-child{margin-top:0}
 .crumbs{font-size:.85rem;color:var(--muted);margin-bottom:20px}
-.crumbs a{color:var(--muted);text-decoration:none}
+.crumbs a{color:var(--muted);text-decoration:none;display:inline-block;padding:3px 0}
 .crumbs a:hover{text-decoration:underline}
 .standfirst{font-size:1.15rem;color:var(--muted);margin:0 0 1.2em}
 .meta-line{font-size:.86rem;color:var(--muted);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:2em}
@@ -369,8 +370,10 @@ ul{margin:0;padding:0;list-style:none}
 .limites-box h2{margin-top:0}
 .limites-box ul,.fuentes-box ul{list-style:disc;padding-left:1.3em}
 .limites-box li,.fuentes-box li{margin-bottom:.5em}
+.limites-box a{display:inline-block;padding:3px 0}
 .fuentes-box{font-size:.88rem;color:var(--muted);margin-top:2.2em;border-top:1px solid var(--line);padding-top:1.2em}
 .fuentes-box h2{font-size:1rem;margin:0 0 .6em}
+.fuentes-box a{display:inline-block;padding:3px 0}
 .related-guias{list-style:disc;padding-left:1.3em;margin:0 0 1.2em}
 .related-guias li{margin-bottom:.5em}
 
