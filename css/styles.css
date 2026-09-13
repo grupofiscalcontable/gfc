@@ -59,6 +59,7 @@ ul{margin:0;padding:0;list-style:none}
 .section--navy .eyebrow{color:var(--gold)}
 .section__head{max-width:720px;margin-bottom:clamp(32px,5vw,56px)}
 .section__head p{color:var(--muted);font-size:1.08rem;margin-bottom:0}
+.section__head p a{display:inline-block;padding:3px 0}
 .section--navy .section__head p{color:#b9c9d8}
 .section__head--center{margin-left:auto;margin-right:auto;text-align:center}
 
