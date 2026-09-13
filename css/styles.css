@@ -6,7 +6,7 @@
   --navy:#0b2942;
   --navy-700:#123a63;
   --navy-600:#1b4b7a;
-  --teal:#2a7f8e;
+  --teal:#25727f;
   --gold:#c8a24b;
   --gold-dark:#a9822f;
   --ink:#1a2733;
@@ -353,7 +353,7 @@ ul{margin:0;padding:0;list-style:none}
 .footer__grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px;margin-bottom:36px}
 .footer__brand img{height:44px;margin-bottom:14px}
 .footer__brand p{max-width:38ch;color:#8ba3b8}
-.footer h4{color:#fff;font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px}
+.footer h3{color:#fff;font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px}
 .footer a{color:#9db3c6;display:inline-block;padding:3px 0}
 .footer a:hover{color:#fff}
 .footer li{margin-bottom:6px}
