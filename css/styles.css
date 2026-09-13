@@ -384,6 +384,11 @@ ul{margin:0;padding:0;list-style:none}
 .fuentes-box a{display:inline-block;padding:3px 0}
 .related-guias{list-style:disc;padding-left:1.3em;margin:0 0 1.2em}
 .related-guias li{margin-bottom:.5em}
+.caso__aviso{font-size:.86rem;color:var(--muted);font-style:italic;margin:0 0 1em}
+.caso{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin:0 0 2em}
+.caso__paso{padding:16px 22px;border-top:1px solid var(--line)}
+.caso__paso:first-child{border-top:0}
+.caso__paso b{display:block;color:var(--navy);margin-bottom:.3em}
 
 /* ============================================================
    Utilidades / animación
